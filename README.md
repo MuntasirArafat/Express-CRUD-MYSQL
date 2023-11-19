@@ -11,7 +11,9 @@ npm install mysql
 Step 2: Use mysql in Your Express Application
 2.1. Create a Connection Pool
 javascript
-Copy code
+
+```
+
 const mysql = require('mysql');
 
 const pool = mysql.createPool({
@@ -23,9 +25,12 @@ const pool = mysql.createPool({
 });
 
 module.exports = pool;
+```
+
 2.2. Read Data
 javascript
-Copy code
+```
+
 const express = require('express');
 const pool = require('./your-pool-module');
 
@@ -53,11 +58,13 @@ app.get('/users', (req, res) => {
     });
   });
 });
+```
 
 // Similar CRUD routes for create, update, and delete can be added.
 2.3. Write Data (Create)
 javascript
-Copy code
+```
+
 app.post('/users', (req, res) => {
   const { username, email } = req.body;
 
@@ -82,10 +89,13 @@ app.post('/users', (req, res) => {
   });
 });
 
+```
+
 // Update and delete routes can be added similarly.
 2.4. Update and Delete Data
 javascript
-Copy code
+```
+
 app.put('/users/:id', (req, res) => {
   const userId = req.params.id;
   const { username, email } = req.body;
@@ -134,6 +144,8 @@ app.delete('/users/:id', (req, res) => {
     });
   });
 });
+```
+
 This adaptation uses the mysql library for handling MySQL database connections and queries. Remember to handle connections properly by releasing them when you're done, especially in asynchronous operations.
 
 
