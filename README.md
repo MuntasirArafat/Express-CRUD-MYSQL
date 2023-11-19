@@ -4,10 +4,15 @@ node js express read write delete update
 
 Certainly! If you prefer to use the mysql library instead of mysql2, you can modify the code accordingly. Here's how you can adapt the code to use mysql:
 
-Step 1: Install mysql
-bash
-Copy code
+Step 1:
+```
+Install mysql
+```
+
+```
 npm install mysql
+```
+
 Step 2: Use mysql in Your Express Application
 2.1. Create a Connection Pool
 javascript
