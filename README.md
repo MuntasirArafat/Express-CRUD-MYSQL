@@ -63,13 +63,11 @@ app.get('/users', (req, res) => {
     });
   });
 });
-```
-
 // Similar CRUD routes for create, update, and delete can be added.
+```
 2.3. Write Data (Create)
 javascript
 ```
-
 app.post('/users', (req, res) => {
   const { username, email } = req.body;
 
@@ -94,9 +92,8 @@ app.post('/users', (req, res) => {
   });
 });
 
-```
-
 // Update and delete routes can be added similarly.
+```
 2.4. Update and Delete Data
 javascript
 ```
