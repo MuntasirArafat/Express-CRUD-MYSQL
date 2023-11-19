@@ -2,7 +2,7 @@
 node js express read write delete update
 
 
-Certainly! If you prefer to use the mysql library instead of mysql2, you can modify the code accordingly. Here's how you can adapt the code to use mysql:
+To read, write, and delete data in MySQL using Express, you'll need to interact with the MySQL database using a Node.js MySQL library
 
 Step 1:
 ```
