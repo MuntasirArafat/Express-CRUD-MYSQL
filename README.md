@@ -5,11 +5,11 @@ node js express read write delete update
 To read, write, and delete data in MySQL using Express, you'll need to interact with the MySQL database using a Node.js MySQL library
 
 Step 1:
-```javascript
+```bash
 Install mysql
 ```
 
-```javascript
+```bash
 npm install mysql
 ```
 
