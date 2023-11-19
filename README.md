@@ -15,9 +15,9 @@ npm install mysql
 
 Step 2: Use mysql in Your Express Application
 2.1. Create a Connection Pool
-javascript
 
-```
+
+```javascript
 
 const mysql = require('mysql');
 
